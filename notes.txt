@@ -1,0 +1,116 @@
+dialect -> oracle , pg ,mysql 
+
+	class -> table 
+		create table -> 
+				firstName -> varchar varchar2 charvarying 
+				
+
+	Object -> insert 
+			oracle 
+			mysql
+			pg
+
+create ? restart? 			
+sql? 
+format? 
+
+
+
+project -> spring boot -> spring data jpa 
+
+application.prop 
+
+#database 
+spring.datasource.url=jdbc:mysql://localhost:3306/springhb
+spring.datasource.username=root
+spring.datasource.password=root
+
+
+#hibernate
+dialect will let hibernate knows that how to execute query -- for particular db   
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+auto detect new class{entity} from create table -- auto detect changes for column 
+spring.jpa.hibernate.ddl-auto=update
+
+it will print all sql query on console 
+spring.jpa.show-sql=true
+
+in good format - above sql 
+spring.jpa.properties.hibernate.format_sql=true
+--------------------------
+
+hibernate is java db framework 
+	database - sql 
+	
+	ORM 
+	
+	JPA -specification
+	HB - implementation 
+	
+	
+existing project - new spring project -> integerate / add 
+
+spring-data-jpa 
+
+application.properties 
+	dialect 
+	ddl-auto
+	sql 
+	format
+	
+	
+	
+	OMR 
+	
+	class --> table 
+	  variable --> column 
+	    instance --> record - row 
+	     
+	
+class -> entity 
+
+@Entity
+@Table(name="users")
+
+	variable -> 
+	
+		primary key -> @Id 
+		auto generated -> @Generated 
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		
+
+-------------------------------------------
+web 
+	1) jsp sts 
+	2) project jsp - Tomcat Embed Jasper jar
+	3) WEB-INF/views/ -> folder 
+	4) application.properties -> map   
+	
+ 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
