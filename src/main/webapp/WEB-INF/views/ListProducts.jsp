@@ -21,7 +21,11 @@
 		<c:forEach items="${list}" var="p">
 			<tr>
 				<td>${p.productId}</td><td>${p.name }</td> <td> ${p.price }</td>
-		<td>Edit | Delete </td>
+		<td>Edit | <a href="deleteproduct?productId=${p.productId}">Delete</a> 
+			|
+			
+			<a href="viewproduct?productId=${p.productId}">View</a>
+		</td>
 			</tr>
 		</c:forEach>
 
