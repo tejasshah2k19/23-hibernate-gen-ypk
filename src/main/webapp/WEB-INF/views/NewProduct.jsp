@@ -17,5 +17,8 @@
 	<input type="submit" value="Save Product" /> 
 	
 	</form>
+	
+	<br><Br>
+	<a href="listproducts">List Products</a>
 </body>
 </html>
