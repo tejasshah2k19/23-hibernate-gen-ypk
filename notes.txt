@@ -88,6 +88,26 @@ web
 	4) application.properties -> map   
 	
  
+--------------------------------------------
+
+many to many 
+
+
+student 
+1  x 
+2  y 
+
+course 
+1  c 
+2  c++ 
+
+student_course 
+sid cid 
+1   1
+1   2 
+2   1 
+
+------------------------------------------------- 
 
 	
 
