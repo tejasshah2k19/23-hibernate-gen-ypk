@@ -14,7 +14,7 @@
 			type="text" name="city" /><br> <Br> 
 			
 			
-	JobType : <select name="jobType.jobTypeId">
+	JobType : <select name="jobType">
 
 			<c:forEach items="${jobs}" var="j">
 				<option value="${j.jobTypeId}">${j.jobTypeName}</option>
