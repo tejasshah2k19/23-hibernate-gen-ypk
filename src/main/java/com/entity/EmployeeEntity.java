@@ -5,11 +5,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="employee")
+@Table(name = "employee")
 public class EmployeeEntity {
 
 	@Id
@@ -19,8 +20,8 @@ public class EmployeeEntity {
 	String name;
 	String city;
 
-	@OneToOne
-	@JoinColumn(name = "jobTypeId",unique = false)
+	@ManyToOne
+	@JoinColumn(name = "jobTypeId")
 	JobTypeEntity jobType;
 
 	public Integer getEmployeeId() {
@@ -46,6 +47,15 @@ public class EmployeeEntity {
 	public void setCity(String city) {
 		this.city = city;
 	}
+
+	public JobTypeEntity getJobType() {
+		return jobType;
+	}
+
+	public void setJobType(JobTypeEntity jobType) {
+		this.jobType = jobType;
+	}
+	
 
 }
 
